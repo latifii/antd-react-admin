@@ -1,0 +1,40 @@
+/** **************************************
+* Fonts: app
+*************************************** */
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/assets/fonts/vazir/Vazir-Thin.woff2");
+}
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/fonts/vazir/Vazir-Light.woff2");
+}
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/vazir/Vazir.woff2");
+}
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/vazir/Vazir-Medium.woff2");
+}
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/vazir/Vazir-Bold.woff2");
+}
+
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/vazir/Vazir-Black.woff2");
+}

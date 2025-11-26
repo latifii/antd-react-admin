@@ -1,0 +1,23 @@
+/* Shimmer animation */
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.shimmer {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, transparent 0%, rgba(134, 134, 134, 0.377) 50%, transparent 100%);
+    transform: translateX(-100%);
+    animation: shimmer 1.5s infinite linear;
+}

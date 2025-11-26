@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+*,
+html {
+  font-family: "vazir", sans-serif !important;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--colorBgLayout);
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+@theme {
+  --color-colorLink: var(--colorLink);
+  --color-colorPrimary: var(--colorPrimary);
+  --color-colorBgLayout: var(--colorBgLayout);
+  --color-colorBgContainer: var(--colorBgContainer);
+}
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+.bg-image-before::before {
+  content: "";
+  position: fixed;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  opacity: 1;
+  filter: blur(2px);
+  z-index: -99;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blossom-bg::before {
+  background-image: url("./assets/blossom.webp");
+}
+
+.blueJelly-bg::before {
+  background-image: url("./assets/jelly.webp");
+}
+
+.leaf-bg::before {
+  background-image: url("./assets/leaf.webp");
+}
+
+.suspense-height {
+  height: calc(100vh - 150px);
+}
+
+.min-res-h {
+  min-height: calc(100vh - 57px);
+}
+
+.min-main-h {
+  min-height: calc(100vh - 180px) !important;
+}
+
+/*******************************************************************************************/
+
+.quill > * {
+  border-color: inherit !important;
+  color: inherit !important;
+}
+
+.quill > .ql-toolbar {
+  border-radius: var(--borderRadiusAnt) var(--borderRadiusAnt) 0 0;
+  border-color: inherit !important;
+}
+
+.quill > .ql-container {
+  font-size: inherit;
+  border-radius: 0 0 var(--borderRadiusAnt) var(--borderRadiusAnt);
+  border-color: inherit !important;
+  height: 200px;
+}
+
+.ql-toolbar.ql-snow .ql-picker-label {
+  color: inherit !important;
+  opacity: 0.76;
+}
+
+.ql-snow .ql-picker {
+  color: inherit !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: inherit;
+}
+
+.ql-snow.ql-toolbar button svg {
+  opacity: 0.76;
+  color: currentColor;
+}
+
+.ql-snow .ql-stroke {
+  stroke: currentColor !important;
+}
+
+.ql-snow .ql-fill {
+  fill: currentColor !important;
+}
+
+.ql-picker-item {
+  color: #444 !important;
+}
+
+.ql-snow .ql-editor {
+  border-color: inherit !important;
+}
+
+/****EMAIL SECTION*********************************************************************************************************************/
+.reduce-emaillist-width {
+  width: calc(100% - 256px);
+}
+
+.table-height {
+  /* height: calc(100vh - 85px); */
+  height: calc(100vh - 85px);
+  overflow: auto;
+}
+
+/* @media (max-width: 1024px) {
+    .table-height {
+        height: calc(100vh - 129px);
+        overflow: auto;
+    }
+} */
+
+.reduce-userlist-width {
+  width: calc(100% - 320px);
+}
+
+.ant-table-cell-row-hover {
+  background: color-mix(
+    in hsl,
+    var(--colorPrimary) 20%,
+    transparent
+  ) !important;
+  /* background: color-mix(in oklch shorter hue, var(--colorPrimary), #FFFFFF 75%) !important; */
+}
+.ant-menu-sub {
+  direction: rtl;
+}

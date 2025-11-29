@@ -14,7 +14,7 @@ const MainFooter = () => {
         <div className="w-full flex flex-wrap justify-around lg:justify-between items-center gap-x-3">
           <div className="flex justify-center items-center">
             <Text type="secondary" className="text-center ">
-              © {currentYear}قالب توسط حامد لطیفی ساخته شده است.
+              © {currentYear}قالب توسط سید حامد لطیفی ساخته شده است.
             </Text>
           </div>
 

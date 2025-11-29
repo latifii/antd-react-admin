@@ -43,7 +43,7 @@ const AuthFooter = () => {
           </div>
           <div className="w-full flex justify-center items-center">
             <Text type="secondary" className="text-center ">
-              © {currentYear}قالب توسط حامد لطیفی ساخته شده است.
+              © {currentYear}قالب توسط سید حامد لطیفی ساخته شده است.
             </Text>
           </div>
         </div>

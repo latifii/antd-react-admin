@@ -17,7 +17,8 @@ export type NotificationResponse = {
 };
 
 export const getNotification = async (
-  params: GetNotificationParams
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  _params: GetNotificationParams
 ): Promise<NotificationResponse> => {
   const notifications: NotificationType[] = [
     {
